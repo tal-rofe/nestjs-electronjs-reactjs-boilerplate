@@ -1,0 +1,8 @@
+dist
+.eslintrc.js
+changelog.config.js
+.stylelintrc.js
+.prettierrc.js
+webpack.config.js
+electron.build.js
+jest.config.js

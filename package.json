@@ -1,0 +1,46 @@
+{
+ "name": "@hc/root",
+ "version": "1.0.0",
+ "private": true,
+ "description": "Vinyl Depository",
+ "author": {
+  "name": "Vinyl Depository",
+  "email": "dev@vinyldepository.com",
+  "url": "https://vinyldepository.com"
+ },
+ "workspaces": [
+  "packages/*"
+ ],
+ "scripts": {
+  "prepare": "husky install",
+  "start:dev": "yarn workspaces run start:dev",
+  "build": "yarn workspaces run build",
+  "test": "yarn workspaces run test",
+  "test:no-watch": "yarn workspaces run test:no-watch",
+  "test:cov": "yarn workspaces run test:cov",
+  "lint": "yarn workspaces run lint",
+  "format": "yarn workspaces run format"
+ },
+ "config": {
+  "commitizen": {
+   "path": "git-cz"
+  }
+ },
+ "commitlint": {
+  "extends": [
+   "@commitlint/config-conventional"
+  ]
+ },
+ "devDependencies": {
+  "@commitlint/cli": "^16.1.0",
+  "@commitlint/config-conventional": "^16.0.0",
+  "@typescript-eslint/parser": "^5.10.1",
+  "commitizen": "^4.2.4",
+  "cross-env": "^7.0.3",
+  "cz-conventional-changelog": "^3.3.0",
+  "eslint-plugin-unused-imports": "^2.0.0",
+  "git-cz": "^4.8.0",
+  "husky": "^7.0.4",
+  "typescript": "^4.5.5"
+ }
+}

@@ -1,0 +1,16 @@
+{
+	"extends": "../../tsconfig.json",
+	"exclude": ["dist", "node_modules"],
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"incremental": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"typeRoots": ["./node_modules/@types", "./@types"]
+	}
+}

@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+#yarn run lint && yarn run test:no-watch && yarn run format && git add .
